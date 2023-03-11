@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.home.HomeFragment"
+    android:paddingBottom="?attr/actionBarSize">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image_view"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:cardCornerRadius="160dp"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/profile_img"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/user_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hermione Granger"
+        android:layout_marginTop="5dp"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:shadowRadius="2"
+        android:shadowColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="hermionegranger@inbox.ru"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/user_name_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Nur-Sultan, Kazakhstan"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/email_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/status_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/round_box"
+        android:backgroundTint="@color/green_status_color"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/location_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="30sp"
+            tools:text="Vaccinated"
+            android:textStyle="bold"
+            android:textColor="@color/status_text_color" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/status_edit_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_right_arr"
+                app:tint="@color/status_text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:id="@+id/exposure_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_exposure"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/status_info_text"
+            app:layout_constraintTop_toTopOf="@id/status_info_text"
+            app:layout_constraintBottom_toBottomOf="@id/status_info_text"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/status_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/status_text"
+            app:layout_constraintBottom_toTopOf="@id/status_result_date_text"
+            app:layout_constraintStart_toEndOf="@id/exposure_icon"
+            tools:text="Your status is secure"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/status_text_color"
+            tools:targetApi="p" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/status_info_text"
+            app:layout_constraintStart_toStartOf="@id/status_info_text"
+            app:layout_constraintEnd_toStartOf="@id/status_edit_btn"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/status_result_date_text"/>
+
+
+        <ImageView
+            android:id="@+id/date_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/status_result_date_text"
+            app:layout_constraintTop_toTopOf="@id/status_result_date_text"
+            app:layout_constraintBottom_toBottomOf="@id/status_result_date_text"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/status_result_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/status_info_text"
+            app:layout_constraintBottom_toTopOf="@id/status_update_date_text"
+            app:layout_constraintStart_toEndOf="@id/date_icon"
+            tools:text="On Oct 19, 2021"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/status_text_color"
+            tools:targetApi="p" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/status_result_date_text"
+            app:layout_constraintStart_toStartOf="@id/status_info_text"
+            app:layout_constraintEnd_toStartOf="@id/status_edit_btn"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/status_update_date_text"/>
+
+        <ImageView
+            android:id="@+id/update_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_update"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/status_update_date_text"
+            app:layout_constraintTop_toTopOf="@id/status_update_date_text"
+            app:layout_constraintBottom_toBottomOf="@id/status_update_date_text"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/status_update_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/status_result_date_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/update_icon"
+            tools:text="Updated: Today, 09:06"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/status_text_color"
+            tools:targetApi="p" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

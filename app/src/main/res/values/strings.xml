@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">CovidTracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_information">Information</string>
+    <string name="bluetooth_text">Please, turn on your Bluetooth\nto get necessary notifications\non time and save yourself\nfrom virus</string>
+    <string name="information_text">Если вы сдавали анализ в сторонней медицинской организации Вам необходимо позвонить по телефону квартирной помощи в поликлинику по месту проживания. Если вы сдвавли анализ в поликлинике вам обязательно позвонит ответственный сотрудник, чтобы согласовать порядок дальнейших действий.\n\nСамое главное не надо паниковать и не заниматься самолечением!</string>
+
+    <string-array name="array_kazakhstan_locations">
+        <item>Choose your location</item>
+        <item>г. Нур-Султан</item>
+        <item>г. Алматы</item>
+        <item>Акмолинская обл.</item>
+        <item>Актюбинская обл.</item>
+        <item>Алматинская обл.</item>
+        <item>Атырауская обл.</item>
+        <item>Западно-Казахстанская обл.</item>
+        <item>Жамбылская обл.</item>
+        <item>Карагандинская обл.</item>
+        <item>Костанайская обл.</item>
+        <item>Кызылординская обл.</item>
+        <item>Мангыстауская обл.</item>
+        <item>Туркестанская обл.</item>
+        <item>Павлодарская обл.</item>
+        <item>Северо-Казахстанская обл.</item>
+        <item>Восточно-Казахстанская обл.</item>
+        <item>г. Шымкент</item>
+    </string-array>
+
+    <string-array name="array_nursultan_medics">
+        <item>Медицинские организации г. Нур-Султан</item>
+        <item>АО «Национальный научный медицинский центр»</item>
+        <item>Медицинский центр Управления делами Президента Республики Казахстан</item>
+        <item>РГП на ПХВ «Городская многопрофильная больница №2»</item>
+        <item>РГП на ПХВ «Научно-производственный центр трансфузиологии»</item>
+        <item>Модульная лаборатория</item>
+        <item>РГП «Многопрофильная городская детская больница № 3»</item>
+        <item>АО «Национальный научный кардиохирургический центр»</item>
+        <item>РДЦ КФ «UMC»</item>
+        <item>Центральный военный госпиталь с поликлиникой КНБ</item>
+        <item>ПЦР лаборатория санитарно-эпидемиологического отдела (филиала центра)</item>
+        <item>Городская поликлиника № 4</item>
+        <item>Городская поликлиника № 6</item>
+        <item>Городская поликлиника  № 7</item>
+        <item>КГП на ПХВ «Городской центр фтизиопульмонологии»</item>
+        <item>РГП на ПХВ «Многопрофильная городская больница № 3» (взрослая)</item>
+    </string-array>
+
+    <string-array name="array_almaty_medics">
+        <item>Филиал РГП на ПХВ «Научно-практический центр санитарно-эпидемиологической экспертизы и мониторинга» РГП на ПХВ «Национальный центр общественного здравоохранения»</item>
+        <item>ПЦР отделение ДГКИБ</item>
+        <item>КГП на ПХВ «Национальный научный центр фтизиопульмонологии»</item>
+    </string-array>
+
+    <string-array name="array_akmolinsk_obl_medics">
+        <item>Медицинские организации Акмолинской области</item>
+        <item>КГП на ПХВ «Акмолинский областной противотуберкулезный диспансер им. К.Курманбаева»</item>
+    </string-array>
+
+    <string-array name="array_aktubinsk_obl_medics">
+        <item>Медицинские организации Актюбинской области:</item>
+        <item>КГП на ПХВ «Областной центр фтизиопульмонологии»</item>
+        <item>ТОО «Шипагер»</item>
+    </string-array>
+
+    <string-array name="array_almatinsk_obl_medics">
+        <item>Медицинские организации Алматинской области:</item>
+        <item>Лаборатория «ЦРБ» Енбекшиказахского района</item>
+        <item>Лаборатория «ЦРБ» Карасайского района</item>
+        <item>«ЦРБ» Илийского района</item>
+    </string-array>
+
+    <string-array name="array_atyrausk_obl_medics">
+        <item>Медицинские организации Атырауской области:</item>
+        <item>СВА «Интертич»</item>
+        <item>КГП на ПХВ «Областная больница №2»</item>
+    </string-array>
+
+    <string-array name="array_zapadnokazakhstansk_obl_medics">
+        <item>Медицинские организации Западно-Казахстанской области:</item>
+        <item>ГКП на ПХВ «Областная многопрофильная больница»</item>
+        <item>ТОО «СВА Интертич»</item>
+        <item>ГКП на ПХВ «Бурлинская районная больница»</item>
+        <item>АТУ им.Жангир хана</item>
+    </string-array>
+
+    <string-array name="array_zhambylsk_obl_medics">
+        <item>Медицинские организации Жамбылской области:</item>
+        <item>Кордайская ветлаборатория</item>
+        <item>ГКП на ПХВ «Детская инфекционная больница»</item>
+        <item>Городской СПИД центр</item>
+        <item>«Областная многопрофильная больница»</item>
+    </string-array>
+
+    <string-array name="array_karagandinsk_obl_medics">
+        <item>Медицинские организации Карагандинской области:</item>
+        <item>Городской СПИД центр</item>
+        <item>КГП на ПХВ «Центральная больница» г. Балхаш</item>
+    </string-array>
+
+    <string-array name="array_kostanaysk_obl_medics">
+        <item>Медицинские организации Костанайской области:</item>
+        <item>Городской СПИД центр</item>
+    </string-array>
+
+    <string-array name="array_kyzylordinsk_obl_medics">
+        <item>Медицинские организации Кызылординской области:</item>
+        <item>КГП на ПХВ «Областной центр фтизиопульмонологии»</item>
+    </string-array>
+
+    <string-array name="array_mangystausk_obl_medics">
+        <item>Медицинские организации Мангыстауской области:</item>
+        <item>ГКП на ПХВ «Жанаозенская многопрофильная городская больница»</item>
+    </string-array>
+
+    <string-array name="array_turkestansk_obl_medics">
+        <item>Медицинские организации Туркестанской области:</item>
+        <item>КГП на ПХВ «Центральная районная больница» г. Сарыагаш</item>
+        <item>ГКП на ПХВ «ТОКВД Кожно-венерологический диспансер»</item>
+        <item>ГКП на ПХВ «Городская поликлиника» г. Туркестан</item>
+        <item>КГП на ПХВ «Областной центр фтизиопульмонологии»</item>
+        <item>ГКП на ПХВ «Ордабасинская центральная районная больница»</item>
+        <item>ГКП на ПХВ «Сузакская центральная районная больница</item>
+        <item>ГКП на ПХВ «Сайрамская центральная районная больница</item>
+        <item>ГКП на ПХВ «Жетисайская центральная районная больница</item>
+    </string-array>
+
+    <string-array name="array_pavlodarsk_obl_medics">
+        <item>Медицинские организации Павлодарской области:</item>
+        <item>КГКП «Павлодарский областной центр по профилактике и борьбе со СПИДом»</item>
+        <item>КГП на ПХВ «Павлодарская областная больница им. Г. Султанова»</item>
+    </string-array>
+
+    <string-array name="array_severokazakhstansk_obl_medics">
+        <item>Медицинские организации Северо-Казахстанской области:</item>
+        <item>КГП на ПХВ «Областной центр фтизиопульмонологии»</item>
+    </string-array>
+
+    <string-array name="array_vostochnokazakhstansk_obl_medics">
+        <item>Медицинские организации Восточно-Казахстанской области:</item>
+        <item>КГП на ПХВ «Центр матери и ребенка»</item>
+        <item>Модульная Лаборатория</item>
+        <item>КГП на ПХВ «Городская больница №4»</item>
+        <item>КГП на ПХВ «Больница скорой медицинской помощи» г.Семей</item>
+        <item>КГП на ПХВ «Районная больница Курчумского района»</item>
+        <item>КГП на ПХВ «Городская больница 2» г.  Семей</item>
+        <item>ПЦР лаб. при Учреждение «Амбулаторный центр»</item>
+        <item>КГП на ПХВ «Районная больница Урджарского района»»</item>
+    </string-array>
+
+    <string-array name="array_shymkent_medics">
+        <item>Медицинские организации г. Шымкент:</item>
+        <item>ГККП «Центр по профилактике и борьбе со СПИД»</item>
+        <item>ГККП «Городская инфекционная больница»</item>
+        <item>ГКП на ПХВ «Городской диагностический центр»</item>
+    </string-array>
+</resources>

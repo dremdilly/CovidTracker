@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/covid_background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/black"
+        android:alpha="0.4">
+    </View>
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:paddingHorizontal="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/purple_purse"
+        android:gravity="center"
+        android:text="Welcome to COVID-19 Tracker"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:paddingHorizontal="60dp"
+        android:text="sign up"
+        android:textSize="25sp"
+        app:cornerRadius="30dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFCFC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text" />
+
+
+    <Button
+        android:id="@+id/sign_in_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:paddingHorizontal="60dp"
+        android:text="log in"
+        android:textSize="25sp"
+        app:cornerRadius="30dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFCFC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_btn"
+        android:paddingHorizontal="103dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="Please, sign up or login if you are already registered to continue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

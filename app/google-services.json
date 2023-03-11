@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "984150791379",
+    "project_id": "soy-braid-314517",
+    "storage_bucket": "soy-braid-314517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984150791379:android:f250256e427473452cf026",
+        "android_client_info": {
+          "package_name": "com.example.covidtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984150791379-9rcgpukl9rv3nnrmssq8sflas3678mnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWBA6I8awx6K7qcql0QY3GN5-1_s2ueSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984150791379-9rcgpukl9rv3nnrmssq8sflas3678mnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
